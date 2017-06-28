@@ -1,0 +1,1064 @@
+.main {
+	background-color: #f1f1f1;
+}
+	.main .popularSizesContainer {
+		height: 1692px;
+	}
+		.main .popularSizesContainer .sizesLink {
+			display: block;
+			margin-top: 10px;
+			text-align: center;
+		}
+	.main .clearanceStarburst {
+		position: absolute;
+		background-color: #dc3a3a;
+		padding: 5px;
+		text-transform: uppercase;
+		color: #ffffff;
+		font-size: 23px;
+		transform: rotate(-1deg);
+		top: 66px;
+		left: 24px;
+	}
+	.main.content .section {
+		border: 0px;
+	}
+	.main .mobile_offers {
+		background-color: #00A3E4;
+		color: #ffffff;
+		font-size: 12px;
+		padding: 5px;
+		text-align: center;
+		margin-top: 20px;
+	}
+	.main .slideIt-left,
+	.main .slideIt-right {
+		position: relative;
+	}
+		.main .slideIt-left > i,
+		.main .slideIt-right > i {
+			position: absolute;
+			top: 44px;
+			left: 10px;
+			font-size: 24px;
+		}
+		.main .double-row .slideIt-left > i,
+		.main .double-row .slideIt-right > i {
+			top: 144px;
+		}
+	.main .orbit-timer {
+		display: none;
+	}
+	.main .content-row,
+	.main .content-bottom-row {
+		width: 95%;
+	}
+	.main .content-bottom-row a:hover {
+		text-decoration: underline;
+	}
+	.main .content-row {
+		background-color: #f7f8fa;
+		margin: auto;
+	}
+		.main .content-row .calloutParagraph {
+			display: table-cell;
+			width: 174px;
+			height: 180px;
+			overflow: auto;
+		}
+			.main .content-row .calloutParagraph h3 {
+				color: #4dbae1;
+				font-size: 24pt;
+				font-weight: 300;
+				margin: 0px;
+				padding: 0px;
+				vertical-align: top;
+			}
+		.main .content-row .textParagraph {
+			display: table-cell;
+			vertical-align: middle;
+		}
+			.main .content-row .textParagraph p {
+				font-size: 15px;
+				line-height: 19px;
+				text-align: justify;
+			}
+		.main .content-row .head,
+		.main .content_left .head,
+		.main .content_right .head {
+			font-size: 16px;
+			color: #000000;
+		}
+		.main .orbit-slides-container {
+			border-top: 1px solid #F1F1F1;
+		}
+		.main .orbit-bullets-container {
+			position: relative;
+			top: -20px;
+		}
+			.orbit-bullets {
+				margin-bottom: 0px;
+			}
+		.main .temp-image {
+			background: url("/html/img/home/banners/background/welcome_to_new_and_improved.jpg") repeat;
+		}
+		.main .banner [data-reveal-id] {
+			cursor: pointer;
+		}
+			.main .banner .banner-image {
+				background-color: #51bec1;
+				text-align: center;
+			}
+				.main .banner .banner-image img {
+					display: block;
+					margin: auto;
+					width: 100%;
+					max-width: 1024px !important;
+				}
+			.main .banner .banner-image-env {
+				background: url('//actionenvelope.scene7.com/is/image/ActionEnvelope/p_hp-holiday_shop-bg?wid=496') repeat-x;
+			}
+				.main .banner .banner-text span {
+					font-weight: bold;
+				}
+			.main .content-row .slideIt-container {
+				height: 150px;
+			}
+			.main .content-row.double-row .slideIt-container {
+				height: 350px;
+			}
+				.main .content-row .slideIt-container a {
+					display: block;
+					width: 175px;
+					position: relative;
+				}
+				.main .content-row .slideIt-container a:hover {
+					text-decoration: underline;
+				}
+					.main .content-row .slideIt-container img {
+						width: 150px;
+					}
+			.main .content-row .slideIt-container a:nth-child(even) {
+				margin-top: 60px;
+			}
+				.main .sizes > div {
+					margin-top: 8px;
+				}
+					.main .sizes > div > a > div {
+						width: 150px;
+						margin: auto;
+						background-color: #ffffff;
+						border: 1px solid #cfd1d3;
+					}
+					.main .sizes > div > a > div > div {
+						display: table-cell;
+						height: 123px;
+						width: 150px;
+						padding: 5px;
+						vertical-align: middle;
+					}
+						.main .sizes .type {
+							font-size: 40px;
+							color: #009cdd;
+							line-height: 40px;
+						}
+						.main .sizes .size {
+							font-size: 14px;
+							color: #009cdd;
+							line-height: 20px;
+						}
+						.main .sizes .envelopes {
+							font-size: 20px;
+							color: #858d93;
+							line-height: 20px;
+						}
+						.main .sizes .colors {
+							font-size: 14px;
+							color: #f67432;
+							line-height: 20px;
+						}
+	.main .services_list > div {
+		width: 100%;
+		float: left;
+	}
+	.main .first_extra_element,
+	.main .second_extra_element {
+		display: none;
+	}
+	.main .content_right,
+	.main .content_left {
+		width: 250px;
+	}
+		.main .content_right .services,
+		.main .content_right .top_rated_products {
+			width: 230px;
+		}
+		.main .content_right .services {
+			font-size: 16px;
+			outline: 2px solid #00008f;
+		}
+			.main .content_right .services a {
+				padding-left: 5px;
+				margin: 4px 0px;
+				font-size: 16px;
+				display: block;
+			}
+			.main .content_right .services a:hover {
+				text-decoration: underline;
+			}
+		.main .content_right .top_rated_products {
+			height: 979px;
+		}
+			.main .content_right .top_rated_products .trp-body {
+				padding: 5px 0px 0px 5px;
+			}
+				.main .content_right .top_rated_products .trp-body img {
+					display: inline-block;
+				}
+			.main .content_right .top_rated_products .trp-rating {
+				padding-left: 5px;
+			}
+				.main .content_right .top_rated_products .trp-rating div {
+					font-size: 12px !important;
+					width: 80px;
+				}
+			.main .content_right .top_rated_products .trp-end {
+				text-align: right;
+				text-transform: uppercase;
+				padding: 31px 0px 0px 5px;
+			}
+			.main .content_right .top_rated_products .trp-name,
+			.main .content_right .top_rated_products .trp-color {
+				font-size: 12px;
+				margin-bottom: 0px;
+				padding-left: 5px;
+				text-overflow: ellipsis;
+				overflow: hidden;
+				white-space: nowrap;
+			}
+			.main .content_right .top_rated_products .trp-name {
+				padding-top: 5px;
+			}
+.main .mobileHeaderContentRow > div:first-child {
+	padding-right: 5px !important;
+}
+.main .mobileHeaderContentRow > div:last-child {
+	padding-left: 5px !important;
+}
+	.main .mobileHeaderContentRow a {
+		background-color: #ffffff;
+		display: block;
+	}
+.main .content-full .customer-reviews {
+	/*width: 330px;*/
+}
+	.main .content-full .customer-reviews .review {
+		width: 350px;
+		margin: 0 20px 0 20px;
+	}
+	.main .content-full .customer-reviews .slideIt-container{
+		height: 225px;
+	}
+	.main .content-full .customer-reviews .cr-header {
+		display: table;
+		padding-bottom: 10px;
+	}
+		.main .content-full .customer-reviews .cr-img {
+			display: table-cell;
+			width: 60px;
+			vertical-align: middle;
+		}
+			.main .content-full .customer-reviews .cr-img img {
+				max-width: 60px;
+				max-height: 104px;
+			}
+		.main .content-full .customer-reviews .cr-header-right {
+			display: table-cell;
+			width: 220px;
+			vertical-align: bottom;
+		}
+			.main .content-full .customer-reviews .rating-5_0{
+				margin-left: 20px;
+			}
+			.main .content-full .customer-reviews .cr-product {
+				font-size: 12px;
+				padding: 0px 20px;
+			}.main .content-full .customer-reviews .cr-color {
+				font-size: 11px;
+				padding: 0px 20px;
+			}
+	.main .content-full .customer-reviews .cr-review {
+		width: 100%;
+		vertical-align: top;
+		white-space: normal;
+		margin: 8px 0 10px;
+		height: 100px;
+		overflow: hidden;
+		position: relative;
+	}
+		.main .content-full .customer-reviews .cr-review i.fa-quote-right {
+			position: absolute;
+			bottom: 0px;
+			right: 0px;
+		}
+		.main .content-full .customer-reviews .cr-review i.fa-quote-left {
+			position: absolute;
+			top: 0px;
+			left: 0px;
+		}
+		.main .content-full .customer-reviews .cr-review p {
+			padding: 0 25px;
+			overflow: hidden;
+		}
+	.main .content-full .customer-reviews .cr-date {
+		max-width: 310px;
+		width: 80px;
+		font-size: 12px;
+		white-space: normal;
+		text-align: right;
+		display: table-cell;
+	}
+	.main .content-full .customer-reviews .cr-date p {
+		font-size: 12px;
+	}
+	.main .content-full .customer-reviews .cr-author {
+		max-width: 310px;
+		width: 200px;
+		font-size: 12px;
+		white-space: normal;
+		text-align: right;
+		display: table-cell;
+	}
+	.main .content-full .customer-reviews .cr-author p {
+		font-size: 12px;
+	}
+	.main .templateListContainer .slideIt {
+		height: 230px;
+	}
+		.main .templateListContainer .slideIt .templateColumn {
+			width: 175px;
+		}
+		.main .templateListContainer .slideIt-left > i,
+		.main .templateListContainer .slideIt-right > i {
+			top: 80px;
+		}
+.starburstHolidayClearance {
+	color: #ffffff;
+	background-color: #ff0000;
+	text-align: center;
+	position: absolute;
+	padding: 10px;
+	top: 0px;
+	left: 0px;
+	width: 54px;
+	height: 54px;
+	border-radius: 27px;
+	line-height: 16px;
+}
+@media only screen and (min-width: 768px) {
+	.main .services_list > div {
+		width: 50%;
+	}
+	.main .second_extra_element {
+		display: block;
+	}
+}
+@media only screen and (max-width: 1023px) {
+	.main .banner .banner-image-env {
+	}
+}
+@media only screen and (min-width: 1300px) {
+	.main .services_list > div {
+		width: 33.33333%;
+	}
+	.main .first_extra_element {
+		display: block;
+	}
+}
+@media only screen and (max-width: 767px) {
+	.main .section {
+		margin: 20px 0px 0px 0px !important;
+	}
+	.main .clearanceStarburst {
+		top: 37px;
+		left: 10px;
+	}
+	.main .content-row .head {
+		text-align: center;
+	}
+	.main .banner .banner-text {
+		font-size: 12px;
+		padding: 5px 0px;
+	}
+	.main .slideIt-left,
+	.main .slideIt-right {
+		width: 20px;
+		min-width: 20px;
+	}
+		.main .content-row .slideIt-left > i,
+		.main .content-row .slideIt-right > i {
+			top: 26px;
+			left: 5px;
+		}
+		.main .double-row .slideIt-left > i,
+		.main .double-row .slideIt-right > i {
+			top: 86px;
+			left: 5px;
+		}
+	.main .content-row .slideIt-container a {
+		width: 105px;
+	}
+	.main .content-row .slideIt-container a:nth-child(even) {
+		margin-top: 30px;
+	}
+		.main .content-row .slideIt-container a > div {
+			font-size: 12px;
+		}
+	.main .content-row .slideIt-container img {
+		width: 100%;
+		max-width: 105px;
+	}
+	.main .content-row .slideIt-container {
+		height: 145px;
+	}
+	.main .content-row.double-row .slideIt-container {
+		height: 240px;
+	}
+	.main .content-row .sizes > div > a > div {
+		width: 105px;
+	}
+	.main .content-row .sizes > div > a > div > div {
+		height: 103px;
+		width: 105px;
+		padding: 3px;
+	}
+		.main .content-row .sizes .type {
+			font-size: 25px;
+			line-height: 25px;
+		}
+		.main .content-row .sizes .size {
+			font-size: 11px;
+			line-height: 16px;
+		}
+		.main .content-row .sizes .envelopes {
+			font-size: 16px;
+			line-height: 16px;
+		}
+		.main .content-row .sizes .colors {
+			font-size: 12px;
+			line-height: 16px;
+		}
+
+	.main .content-full .customer-reviews .review {
+		width: 210px;
+		margin: 0 20px;
+	}
+	.main .content-full .customer-reviews .cr-review {
+		height: 10.5em;
+	}
+		.main .content-full .customer-reviews .cr-date {
+			display: none;
+		}
+		.main .content-full .customer-reviews .cr-author {
+			width: 100%;
+			display: block;
+		}
+	.main .content-full .customer-reviews .slideIt-container{
+		height: 315px;
+	}
+	.main .content-full .customer-reviews .slideIt-left > i,
+	.main .content-full .customer-reviews .slideIt-right > i {
+		top: 96px;
+	}
+	.main .content-full .customer-reviews .cr-header {
+		display: block;
+		padding-bottom: 5px;
+	}
+		.main .content-full .customer-reviews .cr-img {
+			display: block;
+			width: auto;
+			vertical-align: middle;
+		}
+			.main .content-full .customer-reviews .cr-img img {
+				max-width: 75px;
+				max-height: 104px;
+			}
+		.main .content-full .customer-reviews .cr-header-right {
+			display: block;
+			width: 220px;
+			vertical-align: bottom;
+		}
+			.main .content-full .customer-reviews .rating-5_0{
+				margin-left: 0px;
+			}
+			.main .content-full .customer-reviews .cr-product {
+				font-size: 12px;
+				padding: 0px 0px;
+			}
+			.main .content-full .customer-reviews .cr-color {
+				 font-size: 11px;
+				 padding: 0px 0px;
+			}
+	.main .colorContainer img {
+		max-width: 75px !important;
+	}
+}
+
+
+
+
+
+[class^="sprite-"] {
+    background-image: url(/html/img/sprites/main.png);
+    background-repeat: no-repeat;
+    display: inline-block;
+}
+
+.sprite-1801-WH02 {
+    width: 104px;
+    height: 93px;
+    background-position: 0 0;
+}
+
+.sprite-INVDW-28BK {
+    width: 104px;
+    height: 93px;
+    background-position: -104px 0;
+}
+
+.sprite-LUX-PF-12 {
+    width: 104px;
+    height: 93px;
+    background-position: -208px 0;
+}
+
+.sprite-7489-W2 {
+    width: 104px;
+    height: 93px;
+    background-position: -312px 0;
+}
+
+.sprite-LUX-1590-103 {
+    width: 104px;
+    height: 93px;
+    background-position: -416px 0;
+}
+
+.sprite-FLWH4260-04 {
+    width: 104px;
+    height: 93px;
+    background-position: -520px 0;
+}
+
+.sprite-4995-GB {
+    width: 104px;
+    height: 93px;
+    background-position: -624px 0;
+}
+
+.sprite-45161 {
+    width: 104px;
+    height: 93px;
+    background-position: -728px 0;
+}
+
+.sprite-p_hp-512coins {
+    width: 150px;
+    height: 100px;
+    background-position: -832px 0;
+}
+
+.sprite-p_hp-9x12_Open_End_Window {
+    width: 150px;
+    height: 100px;
+    background-position: -982px 0;
+}
+
+.sprite-p_hp-announcement_envelopes {
+    width: 150px;
+    height: 100px;
+    background-position: 0 -100px;
+}
+
+.sprite-p_hp-baronialEnvelopes {
+    width: 150px;
+    height: 100px;
+    background-position: -150px -100px;
+}
+
+.sprite-p_hp-baronial_envelopes {
+    width: 150px;
+    height: 100px;
+    background-position: -300px -100px;
+}
+
+.sprite-p_hp-booklet {
+    width: 150px;
+    height: 100px;
+    background-position: -450px -100px;
+}
+
+.sprite-p_hp-brights {
+    width: 150px;
+    height: 100px;
+    background-position: -600px -100px;
+}
+
+.sprite-p_hp-business {
+    width: 150px;
+    height: 100px;
+    background-position: -750px -100px;
+}
+
+.sprite-p_hp-cardstock {
+    width: 150px;
+    height: 100px;
+    background-position: -900px -100px;
+}
+
+.sprite-p_hp-coinEnvelopes {
+    width: 150px;
+    height: 100px;
+    background-position: 0 -200px;
+}
+
+.sprite-p_hp-coin_envelopes {
+    width: 150px;
+    height: 100px;
+    background-position: -150px -200px;
+}
+
+.sprite-p_hp-coloredPaperBoardMailers {
+    width: 150px;
+    height: 100px;
+    background-position: -300px -200px;
+}
+
+.sprite-p_hp-colorful_10 {
+    width: 340px;
+    height: 95px;
+    background-position: -450px -200px;
+}
+
+.sprite-p_hp-contour {
+    width: 150px;
+    height: 100px;
+    background-position: -790px -200px;
+}
+
+.sprite-p_hp-contourFlapEnvelopes {
+    width: 150px;
+    height: 100px;
+    background-position: -940px -200px;
+}
+
+.sprite-p_hp-contourFlapEnvelopes2 {
+    width: 150px;
+    height: 100px;
+    background-position: 0 -300px;
+}
+
+.sprite-p_hp-cottonCollection {
+    width: 150px;
+    height: 100px;
+    background-position: -150px -300px;
+}
+
+.sprite-p_hp-cotton_envelopes {
+    width: 150px;
+    height: 100px;
+    background-position: -300px -300px;
+}
+
+.sprite-p_hp-credit_card_sleeves {
+    width: 150px;
+    height: 100px;
+    background-position: -450px -300px;
+}
+
+.sprite-p_hp-crystal_clear_envelopes {
+    width: 150px;
+    height: 100px;
+    background-position: -600px -300px;
+}
+
+.sprite-p_hp-currency {
+    width: 150px;
+    height: 100px;
+    background-position: -750px -300px;
+}
+
+.sprite-p_hp-currencyEnvelopes {
+    width: 150px;
+    height: 100px;
+    background-position: -900px -300px;
+}
+
+.sprite-p_hp-envelopeLiners {
+    width: 150px;
+    height: 100px;
+    background-position: 0 -400px;
+}
+
+.sprite-p_hp-envelopeLiners2 {
+    width: 150px;
+    height: 100px;
+    background-position: -150px -400px;
+}
+
+.sprite-p_hp-expansion_envelopes {
+    width: 150px;
+    height: 100px;
+    background-position: -300px -400px;
+}
+
+.sprite-p_hp-flatcards {
+    width: 150px;
+    height: 100px;
+    background-position: -450px -400px;
+}
+
+.sprite-p_hp-foilLinedEnvelopes {
+    width: 150px;
+    height: 100px;
+    background-position: -600px -400px;
+}
+
+.sprite-p_hp-fullface {
+    width: 150px;
+    height: 100px;
+    background-position: -750px -400px;
+}
+
+.sprite-p_hp-glitterEnvelopes {
+    width: 150px;
+    height: 100px;
+    background-position: -900px -400px;
+}
+
+.sprite-p_hp-glitterPaperLiners {
+    width: 150px;
+    height: 100px;
+    background-position: 0 -500px;
+}
+
+.sprite-p_hp-goldGlamourMailers {
+    width: 150px;
+    height: 100px;
+    background-position: -150px -500px;
+}
+
+.sprite-p_hp-greenAndRedEnvelopes {
+    width: 150px;
+    height: 100px;
+    background-position: -300px -500px;
+}
+
+.sprite-p_hp-groceryBagCollection {
+    width: 150px;
+    height: 100px;
+    background-position: -450px -500px;
+}
+
+.sprite-p_hp-groceryBagEnvelopes {
+    width: 150px;
+    height: 100px;
+    background-position: -600px -500px;
+}
+
+.sprite-p_hp-grocery_bag_envelopes {
+    width: 150px;
+    height: 100px;
+    background-position: -750px -500px;
+}
+
+.sprite-p_hp-holidayGiftCards {
+    width: 150px;
+    height: 100px;
+    background-position: -900px -500px;
+}
+
+.sprite-p_hp-holidayMinis {
+    width: 150px;
+    height: 100px;
+    background-position: 0 -600px;
+}
+
+.sprite-p_hp-invoice_double_window {
+    width: 150px;
+    height: 100px;
+    background-position: -150px -600px;
+}
+
+.sprite-p_hp-linenCollection {
+    width: 150px;
+    height: 100px;
+    background-position: -300px -600px;
+}
+
+.sprite-p_hp-luxMailers {
+    width: 150px;
+    height: 100px;
+    background-position: -450px -600px;
+}
+
+.sprite-p_hp-metallicCollection {
+    width: 150px;
+    height: 100px;
+    background-position: -600px -600px;
+}
+
+.sprite-p_hp-metallic_envelopes {
+    width: 150px;
+    height: 100px;
+    background-position: -750px -600px;
+}
+
+.sprite-p_hp-mini {
+    width: 150px;
+    height: 100px;
+    background-position: -900px -600px;
+}
+
+.sprite-p_hp-miniEnvelopes {
+    width: 150px;
+    height: 100px;
+    background-position: 0 -700px;
+}
+
+.sprite-p_hp-newArrivalsSquare062016 {
+    width: 230px;
+    height: 230px;
+    background-position: -150px -700px;
+}
+
+.sprite-p_hp-openend {
+    width: 150px;
+    height: 100px;
+    background-position: -380px -700px;
+}
+
+.sprite-p_hp-paper {
+    width: 150px;
+    height: 100px;
+    background-position: -530px -700px;
+}
+
+.sprite-p_hp-paperAndCardstock {
+    width: 150px;
+    height: 100px;
+    background-position: -680px -700px;
+}
+
+.sprite-p_hp-peel_and_press_envelopes {
+    width: 150px;
+    height: 100px;
+    background-position: -830px -700px;
+}
+
+.sprite-p_hp-petalInvitations {
+    width: 150px;
+    height: 100px;
+    background-position: -980px -700px;
+}
+
+.sprite-p_hp-petals {
+    width: 150px;
+    height: 100px;
+    background-position: 0 -800px;
+}
+
+.sprite-p_hp-petalsAndPockets {
+    width: 150px;
+    height: 100px;
+    background-position: -380px -800px;
+}
+
+.sprite-p_hp-photoGreetingEnvelopes {
+    width: 150px;
+    height: 100px;
+    background-position: -530px -800px;
+}
+
+.sprite-p_hp-photo_greeting_envelopes {
+    width: 150px;
+    height: 100px;
+    background-position: -680px -800px;
+}
+
+.sprite-p_hp-pocketInvitations {
+    width: 150px;
+    height: 100px;
+    background-position: -830px -800px;
+}
+
+.sprite-p_hp-pockets {
+    width: 150px;
+    height: 100px;
+    background-position: -980px -800px;
+}
+
+.sprite-p_hp-recipientAddressing {
+    width: 150px;
+    height: 100px;
+    background-position: 0 -900px;
+}
+
+.sprite-p_hp-recipient_addressing {
+    width: 340px;
+    height: 95px;
+    background-position: -380px -900px;
+}
+
+.sprite-p_hp-recycled_envelopes {
+    width: 150px;
+    height: 109px;
+    background-position: -720px -900px;
+}
+
+.sprite-p_hp-regular {
+    width: 150px;
+    height: 100px;
+    background-position: -870px -900px;
+}
+
+.sprite-p_hp-remittance {
+    width: 150px;
+    height: 100px;
+    background-position: 0 -1000px;
+}
+
+.sprite-p_hp-remittanceEnvelopes {
+    width: 150px;
+    height: 100px;
+    background-position: -150px -1000px;
+}
+
+.sprite-p_hp-rsvpEnvelopes {
+    width: 150px;
+    height: 100px;
+    background-position: -300px -1000px;
+}
+
+.sprite-p_hp-security_tint_envelopes {
+    width: 150px;
+    height: 100px;
+    background-position: -450px -1000px;
+}
+
+.sprite-p_hp-shipping {
+    width: 150px;
+    height: 100px;
+    background-position: -870px -1000px;
+}
+
+.sprite-p_hp-specialtyuse {
+    width: 150px;
+    height: 100px;
+    background-position: -1132px 0;
+}
+
+.sprite-p_hp-square {
+    width: 150px;
+    height: 100px;
+    background-position: -1050px -100px;
+}
+
+.sprite-p_hp-squareEnvelopes {
+    width: 150px;
+    height: 100px;
+    background-position: -1090px -200px;
+}
+
+.sprite-p_hp-squareFlapEnvelopes {
+    width: 150px;
+    height: 100px;
+    background-position: -1050px -300px;
+}
+
+.sprite-p_hp-squareflap {
+    width: 150px;
+    height: 100px;
+    background-position: -1050px -400px;
+}
+
+.sprite-p_hp-taupeMetallic {
+    width: 150px;
+    height: 100px;
+    background-position: -1050px -500px;
+}
+
+.sprite-p_hp-thankYouCards {
+    width: 150px;
+    height: 100px;
+    background-position: -1050px -600px;
+}
+
+.sprite-p_hp-w2_envelopes {
+    width: 150px;
+    height: 100px;
+    background-position: -1130px -700px;
+}
+
+.sprite-p_hp-weddingInvitations {
+    width: 150px;
+    height: 100px;
+    background-position: -1130px -800px;
+}
+
+.sprite-p_hp-weddingshop {
+    width: 340px;
+    height: 95px;
+    background-position: 0 -1100px;
+}
+
+.sprite-p_hp-window {
+    width: 150px;
+    height: 109px;
+    background-position: -1020px -900px;
+}
+
+.sprite-p_hp-woodgrainPaperEnvelopes {
+    width: 150px;
+    height: 100px;
+    background-position: -600px -1009px;
+}
+
+.sprite-p_hp-recipientAddressingRightSide {
+    width: 230px;
+    height: 265px;
+    background-position: -1020px -1009px;
+}
+
+.sprite-p_hp-security_tint_envelopes {
+    width: 150px;
+    height: 100px;
+    background-position: -340px -1100px;
+}
+
+.sprite-p_hp-w2_envelopes {
+    width: 150px;
+    height: 100px;
+    background-position: -490px -1109px;
+}
+
+.sprite-p_hp-9x12_window_envelopes {
+    width: 150px;
+    height: 100px;
+    background-position: -640px -1109px;
+}
+.sprite-p_hp-tax_season_folders {
+    width: 150px;
+    height: 100px;
+    background-position: 0px -1195px;
+}
+.sprite-p_hp-tax_season_10x13_booklet {
+    width: 150px;
+    height: 100px;
+    background-position: -150px -1200px;
+}
+.sprite-p_hp-tax_season_9x12Booklet {
+    width: 150px;
+    height: 100px;
+    background-position: -300px -1195px;
+}

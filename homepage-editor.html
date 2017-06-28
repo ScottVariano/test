@@ -1,0 +1,359 @@
+<html>
+
+
+<head>
+
+<script src="home_files/jquery.min.js"></script>
+<link rel="stylesheet" href="https://os.bigname.com/html/themes/global/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://os.bigname.com/html/themes/global/css/bootstrap-extend.min.css">
+<link rel="stylesheet" href="https://os.bigname.com/html/themes/base/assets/css/site.min.css">
+<link rel="stylesheet" href="https://os.bigname.com/html/js/admin/jquery-ui/css/no-theme/jquery-ui-1.10.3.custom.min.css">
+<!-- Plugins -->
+<link rel="stylesheet" href="https://os.bigname.com/html/themes/global/vendor/animsition/animsition.css">
+<link rel="stylesheet" href="https://os.bigname.com/html/themes/global/vendor/asscrollable/asScrollable.css">
+<link rel="stylesheet" href="https://os.bigname.com/html/themes/global/vendor/switchery/switchery.css">
+<link rel="stylesheet" href="https://os.bigname.com/html/themes/global/vendor/intro-js/introjs.css">
+<link rel="stylesheet" href="https://os.bigname.com/html/themes/global/vendor/slidepanel/slidePanel.css">
+<link rel="stylesheet" href="https://os.bigname.com/html/themes/global/vendor/flag-icon-css/flag-icon.css">
+<link rel="stylesheet" href="https://os.bigname.com/html/themes/global/vendor/chartist/chartist.css">
+<link rel="stylesheet" href="https://os.bigname.com/html/themes/global/vendor/jvectormap/jquery-jvectormap.css">
+<link rel="stylesheet" href="https://os.bigname.com/html/themes/global/vendor/chartist-plugin-tooltip/chartist-plugin-tooltip.css">
+<link rel="stylesheet" href="https://os.bigname.com/html/themes/base/assets/examples/css/dashboard/v1.css">
+<link rel="stylesheet" href="https://os.bigname.com/html/themes/global/vendor/datatables-bootstrap/dataTables.bootstrap.css">
+<link rel="stylesheet" href="https://os.bigname.com/html/themes/global/vendor/datatables-fixedheader/dataTables.fixedHeader.css">
+<link rel="stylesheet" href="https://os.bigname.com/html/themes/global/vendor/datatables-responsive/dataTables.responsive.css">
+<!-- Fonts -->
+<link rel="stylesheet" href="https://os.bigname.com/html/themes/global/fonts/font-awesome/font-awesome.min.css">
+<link rel="stylesheet" href="https://os.bigname.com/html/themes/global/fonts/weather-icons/weather-icons.css">
+<link rel="stylesheet" href="https://os.bigname.com/html/themes/global/fonts/web-icons/web-icons.min.css">
+<link rel="stylesheet" href="https://os.bigname.com/html/themes/global/fonts/brand-icons/brand-icons.min.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,300italic">
+<!-- Customs -->
+<link rel="stylesheet" href="https://os.bigname.com/html/css/util/spinner.css">
+<link rel="stylesheet" href="https://os.bigname.com/html/css/util/dropdown.css">
+<link rel="stylesheet" href="https://os.bigname.com/html/css/admin/custom.css?ts=1">
+<script src="/html/themes/global/vendor/jquery/jquery.js"></script>
+<script src="/html/js/admin/jquery-ui/js/jquery-ui-1.10.3.minimal.min.js"></script>
+<script src="/html/themes/global/vendor/tether/tether.js"></script>
+<script src="/html/themes/global/vendor/bootstrap/bootstrap.js"></script>
+<script src="/html/themes/global/vendor/babel-external-helpers/babel-external-helpers.js"></script>
+
+</head>
+
+
+
+<body>
+
+
+<div class="page">
+			<div class="page-header">
+				<h1 class="page-title">Homepage Editor</h1>
+				<div class="page-header-actions">
+					<ol class="breadcrumb">
+						<li class="breadcrumb-item"><a href="https://os.bigname.com/admin/control/main">Home</a></li>
+						<li class="breadcrumb-item active">Homepage Editor</li>
+					</ol>
+				</div>
+			</div>
+		<div class="page-content"><!-- End Template component://admin/webapp/admin/template/header.ftl -->
+<!-- Begin Template component://admin/webapp/admin/editors/homepageEditor.ftl -->
+<link rel="stylesheet" href="https://os.bigname.com/html/themes/global/vendor/bootstrap-datepicker/bootstrap-datepicker.css">
+<style>
+    .formSection {
+        width: 200px;
+        margin: 10px auto;
+    }
+    .form-control,
+    .input-group {
+        max-width: 200px;
+    }
+</style>
+
+
+<style>
+
+		.desktopPreview {
+			width: 100%;
+			border: 2px solid #62a8ea;
+			min-height: 500px;
+						-moz-transform: scale(0.5, 0.5); 
+			  -webkit-transform: scale(0.5, 0.5); 
+			  -o-transform: scale(0.5, 0.5);
+			  -ms-transform: scale(0.5, 0.5);
+			  transform: scale(0.5, 0.5); 
+			  -moz-transform-origin: top left;
+			  -webkit-transform-origin: top left;
+			  -o-transform-origin: top left;
+			  -ms-transform-origin: top left;
+			  transform-origin: top left;
+		}
+
+</style>
+
+<script>
+$( document ).ready(function() {
+
+		function editorPreview() {
+
+			var desktopWidth = 1200;
+			var availWidth = $(".desktopPreviewCol").width();
+			var scale = availWidth / desktopWidth;
+			var multiply = 100 / scale;
+			// alert(multiply);
+			var cssCorrection = "scale(" + scale + "," + scale + ")";
+			// alert(cssCorrection);
+			
+			$(".desktopPreview")
+				.css("width", multiply + "%")
+				.css("-moz-transform", cssCorrection)
+				.css("-webkit-transform", cssCorrection)
+				.css("-o-transform", cssCorrection)
+				.css("-ms-transform", cssCorrection)
+				.css("transform",  cssCorrection);
+
+		}
+
+		$(window).on("load resize",function(){
+    		editorPreview();
+		});
+		window.setInterval(function(){
+			editorPreview();
+		}, 1000);
+
+		$("input[name='foregroundImage']").on('input propertychange paste', function() {
+		   imgSrc = $(this).val();
+		   $(".desktopPreview").contents().find("div").css("background", "red");
+		});
+
+
+
+});
+</script>
+
+<form id="homepageImageEditor" data-abide="" name="homepageImageEditor" method="post" action="#">
+	<div class="panel panel-primary panel-line" data-collapsed="0">
+		<!-- panel head -->
+		<div class="panel-heading">
+			<div class="panel-title">Desktop</div>
+		</div>
+		<!-- panel body -->
+		<div class="panel-body" style="display: block;">
+
+		<div class="row">
+		<div class="col-md-6">
+
+
+			<div class="row">
+
+				<div class="col-md-12">
+
+				<div class="row">
+
+				<div class="col-md-6">
+					<div class="formSection">
+						<div>Foreground Image (Required):</div>
+						<input class="form-control jqs-validateExists" name="foregroundImage" type="text" value="" placeholder="Foreground Image (Required)">
+					</div>
+				</div>
+				<div class="col-md-6">
+					<div class="formSection">
+						<div>Background Image (Required):</div>
+						<input class="form-control jqs-validateExists" name="backgroundImage" type="text" value="" placeholder="Background Image (Required)">
+					</div>
+				</div>
+
+				</div>
+				</div>
+
+
+
+				<div class="col-md-12">
+
+				<div class="row">
+
+
+				<div class="col-md-6">
+					<div class="formSection">
+						<div>Foreground Image Format:</div>
+						<select class="form-control" name="foregroundImageFormat">
+							<option value="png-alpha">PNG</option>
+							<option value="gif">GIF</option>
+						</select>
+					</div>
+				</div>
+				<div class="col-md-6">
+					<div class="formSection">
+						<div>Foreground Image Link:</div>
+						<input class="form-control" name="foregroundImageLink" type="text" value="" placeholder="Foreground Image Link">
+					</div>
+				</div>
+
+				</div>
+
+				</div>
+			</div>
+
+			</div>
+
+			<div class="col-md-6 desktopPreviewCol">
+
+			<iframe class="desktopPreview" src="home.html"></iframe>
+
+			</div>
+
+			</div>
+
+		</div>
+	</div>
+	<div class="panel panel-primary panel-line" data-collapsed="0">
+		<div class="panel-heading">
+			<div class="panel-title">Mobile</div>
+		</div>
+		<div class="panel-body" style="display: block;">
+			<div class="row">
+				<div class="col-md-3">
+					<div class="formSection">
+						<div>Mobile Image:</div>
+						<input class="form-control" name="mobileImage" type="text" value="" placeholder="Mobile Image">
+					</div>
+				</div>
+				<div class="col-md-3">
+					<div class="formSection">
+						<div>Mobile Image Format:</div>
+						<select class="form-control" name="mobileImageFormat">
+							<option value="png-alpha">PNG</option>
+							<option value="gif">GIF</option>
+						</select>
+					</div>
+				</div>
+				<div class="col-md-3">
+					<div class="formSection">
+						<div>Mobile Image Link:</div>
+						<input class="form-control" name="mobileImageLink" type="text" value="" placeholder="Mobile Image Link">
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="panel panel-primary panel-line" data-collapsed="0">
+		<div class="panel-heading">
+			<div class="panel-title">Misc</div>
+		</div>
+		<div class="panel-body" style="display: block;">
+			<div class="row">
+				<div class="col-md-3">
+					<div class="formSection">
+						<div>Popup Name:</div>
+						<input class="form-control" name="modalPopup" type="text" value="" placeholder="Popup Name">
+					</div>
+				</div>
+				<div class="col-md-3">
+					<div class="formSection">
+						<div>Image Type:</div>
+						<select class="form-control" name="imageType">
+							<option value="timed">Timed</option>
+							<option value="default">Default</option>
+						</select>
+					</div>
+				</div>
+				<div class="col-md-3 jqs-timedInfo">
+					<div class="formSection">
+						<div>Start Date:</div>
+                        <div class="input-group">
+                            <input type="text" name="fromDate" class="form-control jqs-validateExists" data-plugin="datepicker" data-format="yyyy-mm-dd">
+                            <span class="input-group-addon"><i class="icon wb-calendar" aria-hidden="true"></i></span>
+                        </div>
+					</div>
+				</div>
+				<div class="col-md-3 jqs-timedInfo">
+					<div class="formSection">
+						<div>End Date:</div>
+                        <div class="input-group">
+                            <input type="text" name="thruDate" class="form-control jqs-validateExists" data-plugin="datepicker" data-format="yyyy-mm-dd">
+                            <span class="input-group-addon"><i class="icon wb-calendar" aria-hidden="true"></i></span>
+                        </div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="text-center">
+		<button id="submitCreatePromo" type="submit" class="btn btn-green btn-icon btn-lg icon-right jqs-submit">
+			<span>ADD</span>
+			<i class="entypo-check"></i>
+		</button>
+	</div>
+
+	</form>
+
+<script>
+	function checkImageType() {
+		if ($('select[name="imageType"] option:selected').val() == 'timed') {
+			$('.jqs-submit span').html('ADD');
+			$('input[name="fromDate"]').removeClass('jqs-validateExists').addClass('jqs-validateExists');
+			$('input[name="thruDate"]').removeClass('jqs-validateExists').addClass('jqs-validateExists');
+			$('.jqs-timedInfo').show();
+		}
+		else {
+			$('.jqs-submit span').html('UPDATE');
+			$('input[name="fromDate"]').removeClass('jqs-validateExists').val('');
+			$('input[name="thruDate"]').removeClass('jqs-validateExists').val('');
+			$('.jqs-timedInfo').hide();
+		}
+	}
+
+	$(document).ready(function() {
+		checkImageType();
+	});
+
+	$('select[name="imageType"]').on('change', function() {
+		checkImageType();
+	});
+
+	$('.jqs-submit').on('click', function() {
+		var valid = true;
+
+		$('.jqs-validateExists').each(function() {
+			if ($(this).val() == '' && $(this).css('display') != 'none') {
+				valid = false;
+			}
+		});
+
+		if (valid) {
+			$.ajax({
+				type: "POST",
+				url: '/admin/control/doHomepageImageInsertsOrUpdates',
+				data: $('#homepageImageEditor').serialize(),
+				dataType: 'json',
+				cache: false,
+				async: false
+			}).done(function(data) {
+				if(data.success) {
+					// do success response
+					alert("Successfully Updated!");
+				} else {
+					//TODO throw error
+					alert('There was an issue processing your form, please try again or contact your best buddies (The Dev Team).');
+				}
+			});
+		}
+		else {
+			alert('Please make sure all required fields have data.');
+		}
+
+		return false;
+	});
+</script>
+
+<script src="/html/themes/global/vendor/bootstrap-datepicker/bootstrap-datepicker.js"></script>
+<script src="/html/themes/global/js/Plugin/bootstrap-datepicker.js"></script>
+<!-- End Template component://admin/webapp/admin/editors/homepageEditor.ftl -->
+<!-- Begin Template component://admin/webapp/admin/template/footer.ftl -->
+		<br>
+    	</div><!-- page-content -->
+    </div>
+
+
+</body>
+
+    </html>
