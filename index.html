@@ -74,13 +74,12 @@
 
 		.desktopPreview {
 			width: 100%;
-			border: 2px solid #62a8ea;
-			min-height: 500px;
-						-moz-transform: scale(0.5, 0.5); 
+			border: none;
+/*						-moz-transform: scale(0.5, 0.5); 
 			  -webkit-transform: scale(0.5, 0.5); 
 			  -o-transform: scale(0.5, 0.5);
 			  -ms-transform: scale(0.5, 0.5);
-			  transform: scale(0.5, 0.5); 
+			  transform: scale(0.5, 0.5); */
 			  -moz-transform-origin: top left;
 			  -webkit-transform-origin: top left;
 			  -o-transform-origin: top left;
@@ -99,11 +98,13 @@ $( document ).ready(function() {
 			var availWidth = $(".desktopPreviewCol").width();
 			var scale = availWidth / desktopWidth;
 			var multiply = 100 / scale;
-			// alert(multiply);
+			// var heightFix = scale * ((multiply / 100) * 10000 );
 			var cssCorrection = "scale(" + scale + "," + scale + ")";
-			// alert(cssCorrection);
+
+			console.log(multiply);
 			
 			$(".desktopPreview")
+				.css("border", (multiply * .03) + "px solid #62a8ea")
 				.css("width", multiply + "%")
 				.css("-moz-transform", cssCorrection)
 				.css("-webkit-transform", cssCorrection)
@@ -111,6 +112,10 @@ $( document ).ready(function() {
 				.css("-ms-transform", cssCorrection)
 				.css("transform",  cssCorrection);
 
+
+			var heighter = $(".desktopPreview").width() * .5625;
+			$(".desktopPreview").css("height", heighter + "px");
+			$(".desktopPreviewCol").css("max-height", (heighter * scale) + "px");
 		}
 
 		$(window).on("load resize",function(){
@@ -122,7 +127,7 @@ $( document ).ready(function() {
 
 		$("input[name='foregroundImage']").on('input propertychange paste', function() {
 		   imgSrc = $(this).val();
-		   $(".desktopPreview").contents().find("div").css("background", "red");
+		   $(".desktopPreview").contents().find(".banner-image.desktop-only img").attr("src", imgSrc);
 		});
 
 
@@ -140,39 +145,28 @@ $( document ).ready(function() {
 		<div class="panel-body" style="display: block;">
 
 		<div class="row">
-		<div class="col-md-6">
+		<div class="col-md-4">
 
 
-			<div class="row">
-
-				<div class="col-md-12">
 
 				<div class="row">
 
-				<div class="col-md-6">
+				<div class="col-md-12">
 					<div class="formSection">
 						<div>Foreground Image (Required):</div>
 						<input class="form-control jqs-validateExists" name="foregroundImage" type="text" value="" placeholder="Foreground Image (Required)">
 					</div>
 				</div>
-				<div class="col-md-6">
+				<div class="col-md-12">
 					<div class="formSection">
 						<div>Background Image (Required):</div>
 						<input class="form-control jqs-validateExists" name="backgroundImage" type="text" value="" placeholder="Background Image (Required)">
 					</div>
 				</div>
 
-				</div>
-				</div>
-
 
 
 				<div class="col-md-12">
-
-				<div class="row">
-
-
-				<div class="col-md-6">
 					<div class="formSection">
 						<div>Foreground Image Format:</div>
 						<select class="form-control" name="foregroundImageFormat">
@@ -181,7 +175,7 @@ $( document ).ready(function() {
 						</select>
 					</div>
 				</div>
-				<div class="col-md-6">
+				<div class="col-md-12">
 					<div class="formSection">
 						<div>Foreground Image Link:</div>
 						<input class="form-control" name="foregroundImageLink" type="text" value="" placeholder="Foreground Image Link">
@@ -190,12 +184,11 @@ $( document ).ready(function() {
 
 				</div>
 
-				</div>
-			</div>
+
 
 			</div>
 
-			<div class="col-md-6 desktopPreviewCol">
+			<div class="col-md-8 desktopPreviewCol">
 
 			<iframe class="desktopPreview" src="home.html"></iframe>
 
